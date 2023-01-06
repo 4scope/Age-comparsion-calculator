@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home | Stand By Tools.</title>
+    <meta name="description" content="Age comparison is a website that gives you the ability to compare people's ages in your location.">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="">
+  </head>
+  <body id="home">
+    <div>
+      <nav class="nav-list" >
+        <ul>
+          <li class="home"><a href="#home">Home</a></li>
+          <li class="how-to"><a href="#how-to">How To</a></li>
+          <li class="Calculator"><a href="#calcu">Calculator</a></li>
+          <li class="contact-us"><a href="#contact-us">Contact Us</a></li>      
+        </ul>
+      </nav>
+    	<header>
+        <div class="head-div">
+          <div class="head-div-inner">
+           <h1>Age Comparison Calculator</h1>
+           <p>
+             Calculate the age difference between person A and person B
+           </p>
+           <button class="btu-age">Calculate Age</button>
+          </div>
+        </div>
+      </header>
+      <i id="how-to"></i>
+      <br>
+      <br>
+      <section class="first-section">
+        <h1>How to use the calculator</h1>
+        <ul class="fs-ul">
+          <li>
+            <p>Step 1</p>
+            <p>Input the required details of person A in the space provided below</p>
+          </li>
+          <li>
+            <p>Step 2</p>
+            <p>Input the required details of person B in the second space provided below</p>
+          </li>
+          <li>
+            <p>Step 3</p>
+            <p>Than click on the calculate button to see your result</p>
+          </li>
+        </ul>
+      </section>
+      <section class="cal" id="calcu">
+        <br>
+        <br>
+        <h1>Calculator</h1>
+        <form method="get" id="calculator">
+          <label for="person-a">Elder :</label>
+          <input type="date" name="birthdzzay" id="person-a" required=""><br>
+          <label for="person-b">Younger :</label>
+          <input type="date" name="birthday" id="person-b" required=""><br>
+        </form>
+        <div class="div-but">
+          <button id="but">Calculate</button>
+        </div>
+        <div id="display-div">
+        </div>
+      </section>
+      <section class="contact-me" id="contact-us">
+        <br>
+        <br>
+        <div>
+          <h1>Contact Us</h1>
+          <p>Feel free to drop us a line below</p>
+        </div>
+        <form>
+          <label for="full-name" class="lb-full-name">Full Name:</label>
+          <input type="text" name="full-name" id="full-name" required="" placeholder="Enter your name">
+          <br>
+          <label for="email" class="lb-email">Email:</label>
+          <input type="email" name="email" id="email" required="" placeholder="Enter email addess">
+          <br>
+          <label for="tel-num" class="lb-tel">Phone:</label>
+          <input type="tel" name="number" id="tel-num" required="" placeholder="Enter phone number">
+          <br>
+          <label for="comment" class="lb-message">Message:</label>
+          <textarea cols="20" rows="4" id="comment" required="" placeholder="Your comments"></textarea>
+          <input type="submit" class="me-but" name="sub" value="Submit">
+        </form>
+      </section>
+      <footer>
+        <div>
+          <i></i>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
